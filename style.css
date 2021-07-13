@@ -1,1 +1,27 @@
 body {background-color: lightskyblue}
+
+/* Add a black background color to the top navigation */
+.bottomnav {
+    background-color: lightslategray;
+    overflow: hidden;
+  }
+
+  .bottomnav a {
+    float: left;
+    color: darkgreen;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
+  .bottomnav a:hover {
+    background-color:rgb(243, 240, 240);
+    color: black;
+    font-weight: bold;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
