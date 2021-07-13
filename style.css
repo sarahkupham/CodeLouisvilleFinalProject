@@ -1,11 +1,12 @@
+/* Add a background color to the entire site */
 body {background-color: lightskyblue}
 
-/* Add a black background color to the top navigation */
+/* Add a grey background color to the bottom navigation */
 .bottomnav {
     background-color: lightslategray;
     overflow: hidden;
   }
-
+/* Add formatting to the links in the bottom navigation */
   .bottomnav a {
     float: left;
     color: darkgreen;
@@ -15,13 +16,31 @@ body {background-color: lightskyblue}
     font-size: 15px;
     font-weight: bolder;
   }
-  
+  /* Add formatting for when hovering over  a link in the bottom navigation */
   .bottomnav a:hover {
     background-color:rgb(243, 240, 240);
     color: black;
     font-weight: bold;
   }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+     
+  /* Add a grey background color to the top navigation */
+.topnav {
+    background-color: lightslategray;
+    overflow: hidden;
+  }
+/* Add formatting to the links in the top navigation */
+  .topnav a {
+    float: left;
+    color: lightsteelblue;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  /* Add formatting for when hovering over a link in the top navigation */
+  .topnav a:hover {
+    background-color: darkblue);
+    color: black;
+    font-weight: bold;
+  }
