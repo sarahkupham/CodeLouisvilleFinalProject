@@ -1,10 +1,20 @@
 <head>
     <link rel="stylesheet" href="style.css">
-    <div class="topnav" style="topnav">
+    
+    <!-- creating the hamburger menu options -->
+<nav id="hamnav">
+    <!-- the actual hamburger build, hold the tomatoes -->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+   
+    <!-- the list items for the hamburger -->
+    <div id="hamitems">
         <a href="index.html">Home</a>
         <a href="wyoming.html">Wyoming</a>
-        <a href="other.html">Other Places</a>
+        <a href="scotland.html">Scotland</a></a>
+        <a href="other.html">Other places I've been</a>
     </div>
+  </nav>
     
     <title>Bonnie Scotland</title>
 </head>
@@ -14,17 +24,27 @@
     <ul>
         <li>Coos!!!!</li>
             <p>Moo</p>
-            <img src = "images/scotland 1.jpg" title="Coos!!" alt="Coos!!!" width="100%" height="auto">
-          
+            <div class = "container">
+                <img class ="item" src = "images/scotland 1.jpg" title="Coos!!" alt="Coos!!!">
+                <img class ="item" src = "images/coo 2.jpg" title="Coo by a loch" alt="Coo by a loch">
+                <img class ="item" src = "images/coo 3.jpg" title="More coos!!" alt="More coos!!!">
+            </div>
         <li>Edinburgh</li>
             <p>Mauris quis ullamcorper mauris.</p>
-            <img src = "images/scotland 3.jpg" title="Edinburgh Castle" alt="Edinburgh Castle!!!" width="100%" height="auto">
-        
+            <div class = "container">
+                <img class ="item" src = "images/scotland 3.jpg" title="Edinburgh Castle" alt="Edinburgh Castle!!!" >
+                <img class ="item" src = "images/edinburgh 2.jpg" title="Warriston Close" alt="Warriston Close" >
+                <img class ="item" src = "images/edinburgh 3.jpg" title="Princes Street as seen from Calton Hill" alt="the view from Calton Hill" >
+            </div>
+
         <li>The Highlands</li>
             <p>Duis eget tellus nisi. Cras lacinia faucibus enim ut convallis.</p>
-            <img src = "images/scotland 2.jpg" title="Glencoe" alt="Glencoe" width="100%" height="auto">
-                
-    </ul> 
+            <div class ="container">
+            <img class = "item" src = "images/scotland 2.jpg" title="Glencoe" alt="Glencoe">
+            <img class = "item" src = "images/highlands 2 callanish.jpg" title="Callanish, Isle of Lewis" alt="Callanish standing stones">
+            <img class = "item" src = "images/highlands 3 inverness and river ness.jpg" title="Inverness and the River Ness" alt="Inverness">    
+        </div>        
+        </ul> 
 </body>
 
 <footer>

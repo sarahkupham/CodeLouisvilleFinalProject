@@ -5,3 +5,9 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/sarahkupham/CodeLouisvilleFinalProject.git
 git push -u origin main
+
+to update files:
+"git status" -- to confirm changes need updated
+"git add -A" - selecting all files to update
+"git commit -m"message" - notes on adding stuff
+"git push origin main"

@@ -1,10 +1,21 @@
 <head>
     <link rel="stylesheet" href="style.css">
-    <div class="topnav" style="topnav">
+
+   <!-- creating the hamburger menu options -->
+<nav id="hamnav">
+    <!-- the actual hamburger build, hold the tomatoes -->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+   
+    <!-- the list items for the hamburger -->
+    <div id="hamitems">
         <a href="index.html">Home</a>
         <a href="wyoming.html">Wyoming</a>
-        <a href="Scotland.html">Scotland</a>
+        <a href="scotland.html">Scotland</a></a>
+        <a href="other.html">Other places I've been</a>
     </div>
+  </nav>
+
     <title>Other Places I've Been</title>
     Some random, but well loved places I've been!
 </head>
@@ -14,15 +25,22 @@
     <ul>
         <li>North Carolina</li>
             <p>Curabitur blandit scelerisque nunc, sit amet fringilla nisi auctor eget.</p>
-            <img src = "images/blue mountains.jpg" title="Mountain Sunset" alt="Mountain Sunset"width="100%" height="auto">
-
+            <div class = "container">
+                <img class="item" src = "images/blue mountains.jpg" title="Mountain Sunset" alt="Mountain Sunset">
+                <img class="item" src = "images/north carolina sunset.jpg" title="Ocean View" alt="Ocean View">
+            </div>
         <li>Hawaii</li>
             <p>Curabitur a neque condimentum est tempus fringilla et ut ex.</p>
-            <img src = "images/waikiki.jpg" title="Diamondhead Crater, Waikiki" alt="Diamondhead Crater, Waikiki"width="100%" height="auto">
-            
-        <li>Stonehenge</li>
+            <div class ="container">
+                <img class ="item" src = "images/waikiki.jpg" title="Diamondhead Crater, Waikiki" alt="Diamondhead Crater, Waikiki"width="100%" height="auto">
+                <img class="item" src = "images/hawaii eruption.webp" title="Volcano Eruption" alt="Volcano erupting">
+            </div>
+        <li>Odds and Ends</li>
             <p>Vestibulum massa nulla, tempor eleifend eleifend id, facilisis pretium enim. </p>
-            <img src = "images/stonehenge.jpg" title="Stonehenge" alt="Stonehenge" width="100%" height="auto">    
+            <div class="container">
+                <img class ="item" src = "images/temple bar.jpeg" title="Temple Bar, Dublin" alt="Temple Bar">
+                <img class ="item" src = "images/giants causeway.jpg" title="GIant's Causeway" alt="Giant's Causeway">                 
+        </div>
     </ul> 
 </body>
 
