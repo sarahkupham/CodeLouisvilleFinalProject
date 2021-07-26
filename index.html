@@ -1,7 +1,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <Title> Travels with Sarah</Title>
- <!-- not sure i want to include the hamburger on the home page, not sure though-->   
+   
 <!-- creating the hamburger menu options -->
 <nav id="hamnav">
     <!-- the actual hamburger build, hold the tomatoes -->
@@ -16,9 +16,7 @@
     </div>
     </nav>
 
-
-
-    <h1>Welcome to Travels with Sarah</h1>
+    <title>Welcome to Travels with Sarah</title>
     </head>
 <body>
     <h1>Hi! Welcome to my wandering corner of the net.  </h1>
@@ -37,7 +35,26 @@
     </body>
 
 <footer>
-    contact me <a href="mailto:sarah@travelswithsarah.com"></a>
+    <a href="mailto:sarah@travelswithsarah.com">Click here to contact me!</a>
+
+    <p>Sign up for my mailing list here!
+        <form action="" method="POST"> 
+        <div class="mailinglist">
+            <label for="name">Name:</label><br>
+            <input type="text" required id="name" name="name"><br>
+            <label for="email">Email addresss:</label><br>
+            <input type="text" required id="email" name="email">
+            <input type="submit" value="Submit">
+        </div>
+        <script>
+            var inputID = document.getElementById('inputID');
+            console.log(inputID.value);             
+            alert(Thank you for subscribing to the mailing list, <"name">!)
+        </script>
+        </form> 
+
+    </p>
+    
 </footer>
 
 
