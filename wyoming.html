@@ -1,54 +1,72 @@
 <head>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- creating the hamburger menu options -->
-<nav id="hamnav">
-    <!-- the actual hamburger build, hold the tomatoes -->
-    <label for="hamburger">&#9776;</label>
-    <input type="checkbox" id="hamburger"/>
-   
-    <!-- the list items for the hamburger -->
-    <div id="hamitems">
-        <a href="index.html">Home</a>
-        <a href="wyoming.html">Wyoming</a>
-        <a href="scotland.html">Scotland</a></a>
-        <a href="other.html">Other places I've been</a>
-    </div>
-  </nav>
-
-       <title>Wyoming</title>
+    <link rel="stylesheet" href="newstyle.css">
+    <h1>Wyoming</h1>
 </head>
 
-<body>
-    <h1>Welcome to Wyoming, USA!</h1>
-    <ul>
-        <li>Grand Teton National Park</li>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-           <div class = "container">
-                <img class = "item" src = "images/wyoming 1.jpg" title="The Tetons" alt="The Tetons">
-                <img class = "item" src = "images/wyoming 2.jpg" title="Moulton Barn, Antelope Flats" alt="Moulton Barn, Antelope Flats">
-            </div>
-        <li>Yellowstone National Park</li>
-            <p>Nulla feugiat sapien non metus condimentum, nec semper felis maximus.</p>
-            <div class = "container">
-                <img class = "item" src = "images/grand prismatic.jpg" title="Grand Prismatic Spring" alt="Grand Prismatic Spring">
-                <img class = "item" src = "images/yellowstone 2.jpg" title="Herd of Bison" alt="Herd of Bison">
-                <img class = "item" src = "images/yellowstone 3.jpg" title="Grand Canyon of Yellowstone" alt="Grand Canyon of Yellowstone">
-            </div>    
+<body>    
+    <!-- creating the hamburger menu options -->
+    <nav id="hamnav">
+        <!-- the actual hamburger build, hold the tomatoes -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        <!-- the list items for the hamburger -->
+        <div id="hamitems">
+            <a href="index.html">Home</a>
+            <a href="wyoming.html">Wyoming</a>
+            <a href="scotland.html">Scotland</a>
+            <a href="other.html">Other places I've been</a>
+        </div>    
+    </nav>
 
-        <li>Wind River Range</li>
-            <p>Sed convallis diam quis dui dictum pulvinar.</p>
-            <p> photos to come soon</p>
-    </ul> 
+<h2>Welcome to Wyoming, USA!</h2>
+
+<ul>
+    <li>Grand Teton National Park</li>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class = "container">
+            <img class = "item" src = "images/wyoming 1.jpg" title="The Tetons" alt="The Tetons">
+            <img class = "item" src = "images/wyoming 2.jpg" title="Moulton Barn, Antelope Flats" alt="Moulton Barn, Antelope Flats">
+        </div>
+    <li>Yellowstone National Park</li>
+    <p>Nulla feugiat sapien non metus condimentum, nec semper felis maximus.</p>
+        <div class = "container">
+            <img class = "item" src = "images/grand prismatic.jpg" title="Grand Prismatic Spring" alt="Grand Prismatic Spring">
+            <img class = "item" src = "images/yellowstone 2.jpg" title="Herd of Bison" alt="Herd of Bison">
+            <img class = "item" src = "images/yellowstone 3.jpg" title="Grand Canyon of Yellowstone" alt="Grand Canyon of Yellowstone">
+        </div>    
+    <li>Wind River Range</li>
+    <p>Sed convallis diam quis dui dictum pulvinar.</p>
+        <p> photos to come soon</p>
+</ul> 
+
+<div class="bottomnav" style="bottomnav">
+    <a href="index.html">Home</a>
+    <a href="wyoming.html">Wyoming</a>
+    <a href="scotland.html">Scotland</a>
+    <a href="other.html">Other Places</a>
+</div>
+
+<div class="email">
+    <a href="mailto:sarah@travelswithsarah.com">Click here to send me an email!</a>
+</div>
+
+<p>Sign up for my mailing list here!</p>
+    <form action="" method="POST"> 
+        <div class="mailinglist">
+            <label for="name">Name:</label><br>
+            <input type="text" required id="name" name="name"><br>
+            <label for="email">Email addresss:</label><br>
+            <input type="text" required id="email" name="email">
+            <input type="submit" value="Submit">
+        </div>
+    <script>
+        var inputID = document.getElementById('inputID');
+        console.log(inputID.value);             
+        alert(Thank you for subscribing to the mailing list, <"name">!)
+    </script>
+    </form> 
 
 </body>
 
-<footer>
-    <div class="bottomnav" style="bottomnav">
-        <a href="index.html">Home</a>
-        <a href="scotland.html">Scotland</a>
-        <a href="other.html">Other Places</a>
-    </div>
     
-    <a href="mailto:sarah@travelswithsarah.com">Click here to contact me!</a>
-</footer>
+    
