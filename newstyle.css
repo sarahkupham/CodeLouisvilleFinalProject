@@ -52,7 +52,7 @@ ul {
 #hamnav label, #hamburger { display: none; }
   
 /* mobile hamburger settings */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
 
 /* change to vertical menu box */
 #hamitems a {
@@ -99,7 +99,7 @@ ul {
 }
 
 /* large screen photo display*/
-@media screen and (min-width: 350px){
+@media screen and (min-width: 500px){
 /* change to vertical display */
 .container {
     display: flex;
@@ -114,7 +114,7 @@ ul {
 }
 
 /* photo settings for small screen container and item*/
-@media screen and (max-width: 350px){
+@media screen and (max-width: 500px){
 .container {
     display: flex;
     flex-direction: column;
@@ -131,6 +131,7 @@ ul {
 .mailinglist {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     margin-top: 0px;
     margin-bottom: 5px;
     margin-left: 5px;

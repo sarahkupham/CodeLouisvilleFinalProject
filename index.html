@@ -36,20 +36,17 @@
     <a href="mailto:sarah@travelswithsarah.com">Click here to send me an email!</a>
 </div>
 
-<p>Sign up for my mailing list here!</p>
-    <form action="" method="POST"> 
-        <div class="mailinglist">
+<p>Want to know what future travels are in store? Looking for hiking tips and photography tips? Sign up for my mailing list here!</p>
+    <div class="mailinglist">    
+        <form action="" id="form" onsubmit="sConsole(event)"> 
             <label for="name">Name:</label><br>
             <input type="text" required id="name" name="name"><br>
             <label for="email">Email addresss:</label><br>
-            <input type="text" required id="email" name="email">
-            <input type="submit" value="Submit">
-        </div>
-    <script>
-        var inputID = document.getElementById('inputID');
-        console.log(inputID.value);             
-        alert(Thank you for subscribing to the mailing list, <"name">!)
-    </script>
-    </form> 
+            <input type="text" id="email" name="email">
+            <button type="submit" id="submit">Submit</button>
+        </form>        
+        <script src="script.js"></script>
+    
+    </div> 
 
 </body>    
