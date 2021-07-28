@@ -1,5 +1,6 @@
 /* Add a background color to the entire site */
-body {background-color: rgb(132, 183, 214)}
+body {background-color: rgb(132, 183, 214)
+}
 
 h1 {
     font-style: italic;  
@@ -28,15 +29,15 @@ ul {
     margin-top: 15px;
 }
 
-/* big screen hamburger settings */
-/* Hamburger Box */
+/* Hamburger Box settings */
 #hamnav {
     width: 100%;
     background-color:lightsteelblue;
 }
   
 /* horizontal menu settings */
-#hamitems { display: flex; }
+#hamitems { display: flex; 
+}
 #hamitems a {
     flex-grow: 1;
     flex-basis: 0;
@@ -46,13 +47,15 @@ ul {
     text-align: center;
 }
 
-#hamitems a:hover { background: rgb(175, 174, 174); }
+#hamitems a:hover { background: rgb(175, 174, 174); 
+}
   
 /* settings to hid the hamburger */
-#hamnav label, #hamburger { display: none; }
+#hamnav label, #hamburger { display: none; 
+}
   
 /* mobile hamburger settings */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
 
 /* change to vertical menu box */
 #hamitems a {
@@ -60,7 +63,7 @@ ul {
     display: block;
     width: 100%;
     border-top: 2px solid purple;
-}
+    }
     
 /* hamburger icon */
 #hamnav label { 
@@ -70,17 +73,19 @@ ul {
     font-style: normal;
     font-size: 1.2em;
     padding: 7px;
-}
+    }
   
-/* when to show/hide hamburger */
+/* when to show and hide the hamburger */
 #hamitems { display: none; }
 #hamnav input:checked ~ #hamitems { display: block; }
 }
+
 /* Add a grey background color to the bottom navigation */
 .bottomnav {
     background-color: lightslategray;
     overflow: hidden;
-  }
+}
+
 /* Add formatting to the links in the bottom navigation */
 .bottomnav a {
     float: left;
@@ -90,48 +95,68 @@ ul {
     text-decoration: none;
     font-size: 15px;
     font-weight: normal;
-  }
-/* Add formatting for when hovering over  a link in the bottom navigation */
+}
+
+/* Add formatting for when hovering over a link in the bottom navigation */
 .bottomnav a:hover {
     background-color:rgb(243, 240, 240);
     color: black;
     font-weight: bold;
 }
 
-/* large screen photo display*/
-@media screen and (min-width: 500px){
-/* change to vertical display */
+/* screen size changes*/
+/* change for laptop and desktop screens*/
+@media screen and (min-width: 769px) {
+    container {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        width:fit-content;
+        }
+    
+    .item {
+        margin: 25px;
+        width: 850px;
+        height: auto;
+        }
+    }
+
+/* change for tablet screens*/    
+@media screen and (min-width: 481px) and (max-width: 768px) {
 .container {
     display: flex;
-    flex-direction: row;
-    padding: 10px;
-    width: fit-content;
-}
+    flex-direction: column;
+    padding:10px;
+    width:fit-content;
+    }
+
 .item {
-    margin: 5px;
-    width: 750px;
-    height: auto; 
+    margin: 12px;
+    width: 600px;
+    height: auto;
+    }
 }
 
-/* photo settings for small screen container and item*/
-@media screen and (max-width: 500px){
+/* main photo display settings, also for mobile*/
 .container {
     display: flex;
     flex-direction: column;
     padding: 4px;
     width: fit-content;
-}
+    }
+
 .item {
     margin: 5px;
     width: 350px;
     height: auto; 
-}
+    }
 
-/* mailing list setup */
+
+/* mailing list display settings */
 .mailinglist {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-content: space-between;
     margin-top: 0px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -139,7 +164,7 @@ ul {
     width: fit-content;
 }
 .mailinglist label {
-    float: right;
+    float: left;
     margin-left: 25px;
 }
 .mailinglist input {
