@@ -165,10 +165,12 @@ ul {
     margin-right: 5px;
     width: fit-content;
 }
+
 .mailinglist label {
     float: left;
-    margin-left: 25px;
+    margin-left: 27px;
 }
+
 .mailinglist input {
-    margin-left: 10px;
+    margin-left: 11px;
 }
