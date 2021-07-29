@@ -55,7 +55,7 @@ ul {
 }
   
 /* mobile hamburger settings */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
 
 /* change to vertical menu box */
 #hamitems a {
@@ -152,7 +152,6 @@ ul {
     height: auto;
     }
 }
-
 
 
 /* mailing list display settings */
