@@ -1,14 +1,16 @@
 /* Add a background color to the entire site */
-body {background-color: rgb(132, 183, 214)
+
+body {
+    background-color: rgb(132, 183, 214)
 }
 
 h1 {
-    font-style: italic;  
+    font-style: italic;
     text-align: center;
-    font-size: 60px; 
-    margin-top: 22px; 
+    font-size: 60px;
+    margin-top: 22px;
     margin-bottom: 22px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 h2 {
@@ -29,15 +31,21 @@ ul {
     margin-top: 15px;
 }
 
+
 /* Hamburger Box settings */
+
 #hamnav {
     width: 100%;
-    background-color:lightsteelblue;
+    background-color: lightsteelblue;
 }
-  
+
+
 /* horizontal menu settings */
-#hamitems { display: flex; 
+
+#hamitems {
+    display: flex;
 }
+
 #hamitems a {
     flex-grow: 1;
     flex-basis: 0;
@@ -47,38 +55,49 @@ ul {
     text-align: center;
 }
 
-#hamitems a:hover { background: rgb(175, 174, 174); 
+#hamitems a:hover {
+    background: rgb(175, 174, 174);
 }
-  
-/* settings to hid the hamburger */
-#hamnav label, #hamburger { display: none; 
-}
-  
-/* mobile hamburger settings */
-@media screen and (max-width: 768px){
 
+
+/* settings to hid the hamburger */
+
+#hamnav label,
+#hamburger {
+    display: none;
+}
+
+
+/* mobile hamburger settings */
 /* change to vertical menu box */
+
 #hamitems a {
     box-sizing: border-box;
     display: block;
     width: 100%;
     border-top: 2px solid purple;
-    }
-    
+}
+
 /* hamburger icon */
-#hamnav label { 
-    display: inline-block; 
+#hamnav label {
+    display: inline-block;
     color: white;
     background: black;
     font-style: normal;
     font-size: 1.2em;
     padding: 7px;
-    }
-  
-/* when to show and hide the hamburger */
-#hamitems { display: none; }
-#hamnav input:checked ~ #hamitems { display: block; }
 }
+
+
+/* when to show and hide the hamburger */
+#hamitems {
+    display: none;
+}
+
+#hamnav input:checked~#hamitems {
+    display: block;
+}
+
 
 /* Add a grey background color to the bottom navigation */
 .bottomnav {
@@ -86,7 +105,9 @@ ul {
     overflow: hidden;
 }
 
+
 /* Add formatting to the links in the bottom navigation */
+
 .bottomnav a {
     float: left;
     color: darkblue;
@@ -97,12 +118,15 @@ ul {
     font-weight: normal;
 }
 
+
 /* Add formatting for when hovering over a link in the bottom navigation */
+
 .bottomnav a:hover {
-    background-color:rgb(243, 240, 240);
+    background-color: rgb(243, 240, 240);
     color: black;
     font-weight: bold;
 }
+
 
 /* screen size changes*/
 /* main photo display settings, also for mobile*/
@@ -111,48 +135,52 @@ ul {
     flex-direction: column;
     padding: 4px;
     width: fit-content;
-    }
+}
 
 .item {
     margin: 5px;
     width: 230px;
-    height: auto; 
-    }
+    height: auto;
+}
+
 
 /* change for laptop and desktop screens*/
-@media screen and (min-width: 769px) 
-{
-    .container {
+@media screen and (min-width: 769px) {
+    #hamnav label {
+        display: none;
+    }
+    #hamitems {
         display: flex;
         flex-direction: row;
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
         padding: 15px;
-        width:fit-content;
-        }
-    
+        width: fit-content;
+    }
     .item {
         margin: 25px;
         width: 550px;
         height: auto;
-        }
-    }
-
-/* change for tablet screens*/    
-@media screen and (min-width: 481px) and (max-width: 768px) 
-{
-.container {
-    display: flex;
-    flex-direction: column;
-    padding:10px;
-    width:fit-content;
-    }
-
-.item {
-    margin: 12px;
-    width: 300px;
-    height: auto;
     }
 }
 
+
+/* change for tablet screens*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: fit-content;
+    }
+    .item {
+        margin: 12px;
+        width: 300px;
+        height: auto;
+    }
+}
 
 /* mailing list display settings */
 .mailinglist {
